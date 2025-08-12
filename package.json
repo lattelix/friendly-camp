@@ -1,0 +1,19 @@
+{
+  "name": "friendly-camp-blog",
+  "version": "1.0.0",
+  "description": "Блог для родителей и детей лагеря 'Дружба'",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": ["blog", "camp", "react", "nodejs"],
+  "author": "Friendly Camp Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
